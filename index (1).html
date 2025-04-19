@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CORRU – Corruption Coin NFT</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      .fadeIn { opacity: 0; animation: fadeIn 2s forwards; }
+      @keyframes fadeIn { to { opacity: 1; } }
+      .bounce { animation: bounce 2s infinite; }
+      @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    </style>
+  </head>
+  <body class="bg-black text-white">
+
+    <header class="text-center p-12 bg-gradient-to-r from-yellow-600 via-red-600 to-purple-600 shadow-lg">
+      <h1 class="text-5xl font-bold drop-shadow-md mb-4 fadeIn">CORRU – Corruption Coin Token</h1>
+      <p class="mt-4 text-xl italic fadeIn">Fighting corruption with memes & moonshots</p>
+    </header>
+
+    <section class="p-12 flex flex-col items-center bg-gray-900 text-white">
+      <h2 class="text-4xl font-bold mb-8 fadeIn">Welcome to CORRU NFT Collection</h2>
+      <div class="flex justify-center gap-6 mb-12">
+        <img src="/corruption-meme.jpg" alt="CORRU NFT" class="rounded-lg shadow-lg bounce w-full max-w-4xl" />
+      </div>
+      <div class="text-center">
+        <p class="text-lg mb-4">Own a piece of history. Buy one of our limited edition NFTs and join the meme revolution!</p>
+        <button class="px-6 py-3 bg-yellow-500 text-black rounded-lg text-xl hover:bg-yellow-600 transition">Buy Now</button>
+      </div>
+    </section>
+
+    <footer class="bg-yellow-800 text-black text-center p-6">
+      <h3 class="text-3xl font-bold">Join the Meme Movement</h3>
+      <p class="mt-2">Telegram | Twitter (X) | Discord</p>
+      <p class="mt-4 italic text-sm">*Not financial advice. Just meme magic.*</p>
+    </footer>
+
+    <script>
+      // Add JavaScript animations for dynamic effects
+      window.onload = () => {
+        document.querySelector('header').classList.add('fadeIn');
+        document.querySelector('footer').classList.add('fadeIn');
+      };
+    </script>
+  </body>
+</html>
